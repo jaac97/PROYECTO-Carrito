@@ -1,0 +1,33 @@
+{
+  "name": "proyecto-carrito",
+  "version": "1.0.0",
+  "description": "In this project, we use vanilla JavaScript and consist in programming a shopping cart.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaac97/PROYECTO-Carrito.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Skeleton",
+    "JavaScript",
+    "Gulp"
+  ],
+  "author": "Josué Alarcón",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaac97/PROYECTO-Carrito/issues"
+  },
+  "homepage": "https://github.com/jaac97/PROYECTO-Carrito#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.36.0"
+  }
+}

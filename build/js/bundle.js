@@ -33,46 +33,13 @@ const leerDatos = (datosCurso) => {
         cantidad: 1
     };
 
-    // cursos.push(curso);
-    // mostrarCursos(curso);
 
-    // console.log(cursos);
+
+
 
 
     guardarCursos(curso);
 }
-
-
-// Forma 1
-// const mostrarCursos = (cursos) => {
-
-//     listaCarrito.innerHTML= "";
-
-//     cursos.forEach(datosCurso => {
-//         const imagen = document.createElement('img');
-//         imagen.src = datosCurso.imagen;
-//         imagen.alt = datosCurso.nombre;
-
-//         const contenedorImg = document.createElement('td');
-//         contenedorImg.appendChild(imagen);
-
-
-//         const nombreCurso = document.createElement('td');
-//         nombreCurso.textContent = datosCurso.nombre;
-
-//         const precio = document.createElement('td');
-//         precio.textContent = datosCurso.precio;
-
-//         const cantidad = document.createElement('td');
-//         cantidad.textContent = datosCurso.cantidad;
-
-//         const fila = document.createElement('tr');
-//         fila.append(contenedorImg,nombreCurso,precio,cantidad);
-
-//         listaCarrito.appendChild(fila);
-//     });
-// }
-
 
 // forma 2
 
@@ -138,7 +105,7 @@ const eliminarCurso = (e) =>{
         const curso = e.target.parentElement.parentElement;
         const cursoId = curso.querySelector('a').getAttribute('data-id');
         // e.target.parentElement.parentElement.remove();
-        console.log(curso,cursoId)
+
 
 
         let cursos2 = cursos.filter(curso => curso.id !== cursoId);
