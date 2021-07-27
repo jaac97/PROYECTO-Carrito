@@ -11,6 +11,13 @@ const cargarEventos = () => {
     listaCursos.addEventListener('click', agregarCurso);
     carrito.addEventListener('click', eliminarCurso);
     vaciarCarrito.addEventListener('click', borrarCarro);
+
+    // muestra cursos
+    document.addEventListener('DOMContentLoaded', ()=>{
+        cursos = JSON.parse(localStorage.getItem('cursos')) || [];
+        mostrarCursos(cursos);
+        console.log(cursos)
+    })
 };
 
 const agregarCurso = (e) => {
@@ -66,8 +73,13 @@ const mostrarCursos = (cursos) => {
         `;
         listaCarrito.appendChild(fila);
     });
+    sincronizarStorage()
 }
 
+const sincronizarStorage = () => {
+    // console.log(cursos);
+    localStorage.setItem('cursos',JSON.stringify(cursos));
+}
 
 const guardarCursos = (datosCurso) => {
 
@@ -105,8 +117,6 @@ const eliminarCurso = (e) =>{
         const curso = e.target.parentElement.parentElement;
         const cursoId = curso.querySelector('a').getAttribute('data-id');
         // e.target.parentElement.parentElement.remove();
-
-
 
         let cursos2 = cursos.filter(curso => curso.id !== cursoId);
         cursos = cursos2;
