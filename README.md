@@ -5,4 +5,5 @@ Technologies used:
 CSS Skeleton.
 HTML
 JavaScript.
+LocalStorage API
 You can see this project onLive in Netlify: https://condescending-cray-28fca1.netlify.app/
