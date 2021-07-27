@@ -29,5 +29,6 @@ function imagen(){
 }
 function watchArchivos () {
     watch ('./src/css/**/*.scss', css);
+    watch('./src/js/*.js', javascript);
 }
 exports.default = series(css,javascript,imagen, watchArchivos);
